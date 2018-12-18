@@ -1,0 +1,438 @@
+@charset "UTF-8";
+@import "settings";
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+ body {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding:0;
+}
+
+
+//HEADER SECTION
+.custom-header {
+  padding: 15px 0 0 0;
+}
+
+.custom-telephone-block {
+
+  //margin-bottom: 20px;
+
+  &>p {
+    text-align: center;
+    color: $textDarkColor;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    @media (min-width: $BootstrapBreakpointMedium) {
+      text-align: left;
+    }
+  }
+}
+
+a.phone {
+  height: 40px;
+  padding: 5px 0 0 45px;
+  text-decoration: none;
+  color: $textDarkColor;
+  font-size: 18px;
+  font-weight: 700;
+  background: url("../resources/phone.png") no-repeat left center/auto;
+
+
+  @media (min-width: $BootstrapBreakpointSmall) {
+    margin-left: 20px;
+  }
+}
+
+
+//NAVIGATION
+
+.custom-navbar {
+
+    &>a {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 65px;
+      background-color: $bgGreyColor;
+      color: $linkNavBlackColor;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 20px;
+      transition: all ease 0.3s;
+
+      &:hover {
+        background-color: $linkBgBlueColor;
+        color: $linkNavWhiteColor;
+      }
+
+    }
+
+    &>.active {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 65px;
+    background-color: $linkBgBlueColor;
+    color: $linkNavWhiteColor;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+  }
+
+.custom-menu-bar {
+  text-align: center;
+  background-color: $bgGreyColor;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+
+  &>a {
+    color: $linkNavBlackColor;
+    text-decoration: none;
+
+    &>i {
+      color: $linkBgBlueColor;
+      margin: 0 10px;
+    }
+  }
+}
+
+
+// SECTION MAIN
+
+.custom-main-page-sales {
+  min-height: 500px;
+  background: url("../resources/man_narrow.jpg") no-repeat bottom center/cover;
+
+  @media (min-width: $BootstrapBreakpointMedium) {
+    background: url("../resources/man_square.jpg") no-repeat bottom center/cover;
+  }
+
+  @media (min-width: $BootstrapBreakpointLarge) {
+    min-height: auto;
+    background: url("../resources/man_wide.jpg") no-repeat center right/cover;
+  }
+
+  &>h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color:$textDarkGreyColor;
+  }
+
+
+
+
+}
+
+.custom-main-page-form {
+  background-color: $bgGreyColor;
+
+  &>h3 {
+    color: $textDarkColor;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  &>p {
+    color: $textDarkGreyColor;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.custom-form-input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.custom-form-textarea {
+  border: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.custom-red-button {
+  padding: 15px 30px;
+  color:$textWhiteColor;
+  background-color: $buttonRedColor;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 10px 16px rgba(237, 24, 71, 0.3);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+
+  &:hover {
+    color: $textWhiteColor;
+    text-decoration: none;
+    background-color: darken($buttonRedColor, 10%);
+
+  }
+}
+
+.custom-section-services {
+
+  &>div {
+
+    transition: filter ease 0.3s;
+    
+    &:hover {
+      -webkit-filter: grayscale(0.4);
+      filter: grayscale(0.4);
+    }
+
+
+    &>h3 {
+      color: $textWhiteColor;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    &>p {
+      color: $textWhiteColor;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+
+
+.custom-storage {
+  background: url("../resources/storage_image.jpg") no-repeat center/cover;
+  }
+
+.custom-package {
+  background: url("../resources/package_image.jpg") no-repeat center/cover;
+}
+
+.custom-delivery {
+  background: url("../resources/delivery_image.jpg") no-repeat center/cover;
+}
+
+
+.custom-explain {
+  background-color: $bgGreyColor;
+
+  &>div {
+    &>h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: $textDarkGreyColor;
+
+      @media (min-width: $BootstrapBreakpointMedium) {
+        font-size: 32px;
+      }
+
+    }
+
+     &>p {
+
+    color: $textDarkGreyColor;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+  }
+
+  }
+
+}
+
+.custom-description {
+  &>div {
+    &>div {
+      &>p {
+        background: url("../resources/check_2.png") no-repeat left top/auto;
+        padding: 0 0 0 35px;
+        color: $textDarkColor;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+// PRICE AND SERVICES PAGE
+
+.custom-price-and-services {
+  background-color: $bgGreyColor;
+
+  &>h2 {
+    color: $textDarkColor;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &>div {
+
+    &>.offer-bullet {
+      background: url("../resources/check_2.png") no-repeat left top/auto;
+      padding: 0 15px 0 35px;
+      color: $textDarkColor;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+  }
+
+  .custom-price-bullet {
+
+    color: $textDarkColor;
+
+    &>h3 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &>p {
+      font-size: 18px;
+      font-weight: 400;
+
+    }
+  }
+}
+
+.custom-credits {
+
+  color: $textDarkColor;
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+
+
+// CUSTOM CONTACTS
+
+.custom-contacts-map {
+  height: 400px;
+}
+
+.custom-contact {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  color: $textDarkColor;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 0 0 45px;
+
+}
+
+.custom-contact-mail {
+  background: url("../resources/heart.png") no-repeat left center/auto;
+
+  &>a {
+    text-decoration: none;
+    color: $textDarkColor;
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+}
+
+.custom-contact-address {
+
+  background: url("../resources/location.png") no-repeat left center/auto;
+}
+
+.custom-contact-phone {
+
+
+  font-size: 22px;
+  font-weight: 700;
+  background: url("../resources/phone.png") no-repeat left center/auto;
+
+  &>a {
+    text-decoration: none;
+    color: $textDarkColor;
+  }
+}
+
+.custom-contact-time {
+  background: url("../resources/time.png") no-repeat left center/auto;
+}
+
+// CUSTOM FOOTER
+
+.custom-footer {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background-color: $bgGreyColor;
+&>div {
+
+      & > p {
+        color: $textDarkGreyColor;
+        font-size: 18px;
+        font-weight: 400;
+
+      }
+    }
+}
+
+
+
+
+
+
+
+//ADDITIONAL STYLES FROM BOOTSTRAP. I TOOK STYLES I USED IN THIS PROJECT
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.custom-md-15 {
+  @media (min-width: $BootstrapBreakpointSmall) {
+    margin: 0 -15px !important;
+  }
+}

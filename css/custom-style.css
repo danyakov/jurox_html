@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&subset=cyrillic-ext");
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.custom-header {
+  padding: 15px 0 0 0; }
+
+.custom-telephone-block > p {
+  text-align: center;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px; }
+  @media (min-width: 768px) {
+    .custom-telephone-block > p {
+      text-align: left; } }
+
+a.phone {
+  height: 40px;
+  padding: 5px 0 0 45px;
+  text-decoration: none;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  background: url("../resources/phone.png") no-repeat left center/auto; }
+  @media (min-width: 576px) {
+    a.phone {
+      margin-left: 20px; } }
+
+.custom-navbar > a {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 65px;
+  background-color: #efefef;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
+  transition: all ease 0.3s; }
+  .custom-navbar > a:hover {
+    background-color: #243a7a;
+    color: #ffffff; }
+.custom-navbar > .active {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 65px;
+  background-color: #243a7a;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px; }
+
+.custom-menu-bar {
+  text-align: center;
+  background-color: #efefef;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 700; }
+  .custom-menu-bar > a {
+    color: #2b2b2b;
+    text-decoration: none; }
+    .custom-menu-bar > a > i {
+      color: #243a7a;
+      margin: 0 10px; }
+
+.custom-main-page-sales {
+  min-height: 500px;
+  background: url("../resources/man_narrow.jpg") no-repeat bottom center/cover; }
+  @media (min-width: 768px) {
+    .custom-main-page-sales {
+      background: url("../resources/man_square.jpg") no-repeat bottom center/cover; } }
+  @media (min-width: 992px) {
+    .custom-main-page-sales {
+      min-height: auto;
+      background: url("../resources/man_wide.jpg") no-repeat center right/cover; } }
+  .custom-main-page-sales > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2b2b2b; }
+
+.custom-main-page-form {
+  background-color: #efefef; }
+  .custom-main-page-form > h3 {
+    color: #222222;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px; }
+  .custom-main-page-form > p {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 400; }
+
+.custom-form-input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 20px; }
+
+.custom-form-textarea {
+  border: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 20px; }
+
+.custom-red-button {
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #ed1847;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 10px 16px rgba(237, 24, 71, 0.3);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.2s; }
+  .custom-red-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #c30f37; }
+
+.custom-section-services > div {
+  transition: filter ease 0.3s; }
+  .custom-section-services > div:hover {
+    -webkit-filter: grayscale(0.4);
+    filter: grayscale(0.4); }
+  .custom-section-services > div > h3 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700; }
+  .custom-section-services > div > p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400; }
+
+.custom-storage {
+  background: url("../resources/storage_image.jpg") no-repeat center/cover; }
+
+.custom-package {
+  background: url("../resources/package_image.jpg") no-repeat center/cover; }
+
+.custom-delivery {
+  background: url("../resources/delivery_image.jpg") no-repeat center/cover; }
+
+.custom-explain {
+  background-color: #efefef; }
+  .custom-explain > div > h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b2b2b; }
+    @media (min-width: 768px) {
+      .custom-explain > div > h3 {
+        font-size: 32px; } }
+  .custom-explain > div > p {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+
+.custom-description > div > div > p {
+  background: url("../resources/check_2.png") no-repeat left top/auto;
+  padding: 0 0 0 35px;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400; }
+
+.custom-price-and-services {
+  background-color: #efefef; }
+  .custom-price-and-services > h2 {
+    color: #222222;
+    font-size: 32px;
+    font-weight: 700; }
+  .custom-price-and-services > div > .offer-bullet {
+    background: url("../resources/check_2.png") no-repeat left top/auto;
+    padding: 0 15px 0 35px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400; }
+  .custom-price-and-services .custom-price-bullet {
+    color: #222222; }
+    .custom-price-and-services .custom-price-bullet > h3 {
+      font-size: 22px;
+      font-weight: 600; }
+    .custom-price-and-services .custom-price-bullet > p {
+      font-size: 18px;
+      font-weight: 400; }
+
+.custom-credits {
+  color: #222222;
+  font-size: 22px;
+  font-weight: 600; }
+
+.custom-contacts-map {
+  height: 400px; }
+
+.custom-contact {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 0 0 45px; }
+
+.custom-contact-mail {
+  background: url("../resources/heart.png") no-repeat left center/auto; }
+  .custom-contact-mail > a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600; }
+
+.custom-contact-address {
+  background: url("../resources/location.png") no-repeat left center/auto; }
+
+.custom-contact-phone {
+  font-size: 22px;
+  font-weight: 700;
+  background: url("../resources/phone.png") no-repeat left center/auto; }
+  .custom-contact-phone > a {
+    text-decoration: none;
+    color: #222222; }
+
+.custom-contact-time {
+  background: url("../resources/time.png") no-repeat left center/auto; }
+
+.custom-footer {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background-color: #efefef; }
+  .custom-footer > div > p {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 400; }
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0; }
+
+.py-10 {
+  padding: 10px 0; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-15 {
+  margin-bottom: 15px; }
+
+@media (min-width: 576px) {
+  .custom-md-15 {
+    margin: 0 -15px !important; } }
+
+/*# sourceMappingURL=custom-style.css.map */
